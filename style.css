@@ -261,7 +261,7 @@ button, input, select {
 .hero-section {
     position: relative;
     min-height: 100vh;
-    background-image: url('child_flag.png');
+    background-image: url('child_flag.jpg');
     background-size: cover;
     background-position: center 30%;
     display: flex;
@@ -691,7 +691,7 @@ button, input, select {
 .bottom-cta-section {
     position: relative;
     padding: var(--space-lg) 0;
-    background-image: url('mountains_flag.png');
+    background-image: url('mountains_flag.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
