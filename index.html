@@ -20,52 +20,30 @@
         <div class="nav-logos">
             <!-- Unicoin Foundation Logo -->
             <a href="https://unicoin.org/" target="_blank" class="logo-link">
-                <img src="unicoinfoundation_logo.png" alt="Unicoin Foundation Logo" class="logo-unicoin-img">
+                <img src="unicoinfoundation_logo_white.png" alt="Unicoin Foundation Logo" class="logo-unicoin-img">
             </a>
             
             <div class="logo-divider"></div>
             
             <!-- Influur Logo -->
             <a href="https://www.influur.com" target="_blank" class="logo-link logo-influur-wrapper">
-                <img src="influur_logo_dark.png" alt="Influur Logo" class="logo-influur-img">
+                <img src="influur_logo_white.png" alt="Influur Logo" class="logo-influur-img">
                 <span class="logo-tagline">WHERE INFLUENCE MEETS IMPACT</span>
             </a>
         </div>
         
-        <nav class="nav-links">
-            <a href="#sobre-nosotros">Sobre Nosotros</a>
-            <a href="#impacto">Impacto</a>
-            <a href="#como-funciona">Cómo Funciona</a>
-            <a href="#faq">FAQ</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-        
-        <div class="nav-cta">
+        <div class="nav-actions">
+            <div class="lang-selector">
+                <a href="#" class="lang-option active">ES</a>
+                <span class="lang-divider">|</span>
+                <a href="#" class="lang-option">EN</a>
+            </div>
             <button class="btn btn-primary open-modal-btn">
                 <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" style="margin-right: 6px; vertical-align: middle;"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
                 Donar Ahora
             </button>
-            <!-- Mobile Menu Toggle -->
-            <button class="mobile-menu-toggle" aria-label="Abrir menú">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </div>
     </header>
-
-    <!-- Mobile Navigation Drawer -->
-    <div class="mobile-nav">
-        <a href="#sobre-nosotros" class="mobile-link">Sobre Nosotros</a>
-        <a href="#impacto" class="mobile-link">Impacto</a>
-        <a href="#como-funciona" class="mobile-link">Cómo Funciona</a>
-        <a href="#faq" class="mobile-link">FAQ</a>
-        <a href="#contacto" class="mobile-link">Contacto</a>
-        <button class="btn btn-primary open-modal-btn w-full" style="margin-top: 20px;">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" style="margin-right: 6px; vertical-align: middle;"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-            Donar Ahora
-        </button>
-    </div>
 
     <!-- Hero Section -->
     <section class="hero-section" id="sobre-nosotros">
@@ -323,22 +301,15 @@
 
     <!-- Bottom CTA Section -->
     <section class="bottom-cta-section" id="contacto">
+        <div class="cta-overlay"></div>
         <div class="container bottom-cta-container">
-            <div class="bottom-cta-grid">
-                <!-- Left: Waving flag image -->
-                <div class="bottom-cta-image-box">
-                    <img src="mountains_flag.jpg" alt="Venezuela Flag Mountains" class="bottom-cta-img">
-                </div>
-                
-                <!-- Right: Content -->
-                <div class="bottom-cta-content-box">
-                    <h2 class="cta-title">Juntos, podemos llevar <span class="highlight-gold">esperanza</span> a millones.</h2>
-                    <div class="cta-handwritten">Gracias por apoyar a Venezuela.</div>
-                    <button class="btn btn-primary btn-large open-modal-btn">
-                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="margin-right: 8px; vertical-align: middle;"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-                        Donar Ahora
-                    </button>
-                </div>
+            <div class="cta-content">
+                <h2 class="cta-title">Juntos, podemos llevar <span class="highlight-gold">esperanza</span> a millones.</h2>
+                <div class="cta-handwritten">Gracias por apoyar a Venezuela.</div>
+                <button class="btn btn-primary btn-large open-modal-btn">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="margin-right: 8px; vertical-align: middle;"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                    Donar Ahora
+                </button>
             </div>
         </div>
     </section>
@@ -348,9 +319,19 @@
         <div class="container">
             <div class="footer-top">
                 <div class="footer-brand">
-                    <div class="footer-logo-box" style="display: flex; align-items: center; gap: 8px;">
-                        <img src="unicoin_coin.png" alt="Unicoin" style="height: 28px; width: auto;">
-                        <a href="https://unicoin.com" target="_blank" class="footer-logo">UNICOIN.COM</a>
+                    <div class="footer-logos">
+                        <!-- Unicoin Foundation Logo -->
+                        <a href="https://unicoin.org/" target="_blank" class="footer-logo-link">
+                            <img src="unicoinfoundation_logo.png" alt="Unicoin Foundation Logo" class="footer-logo-unicoin-img">
+                        </a>
+                        
+                        <div class="footer-logo-divider"></div>
+                        
+                        <!-- Influur Logo -->
+                        <a href="https://www.influur.com" target="_blank" class="footer-logo-link footer-logo-influur-wrapper">
+                            <img src="influur_logo_dark.png" alt="Influur Logo" class="footer-logo-influur-img">
+                            <span class="footer-logo-tagline">WHERE INFLUENCE MEETS IMPACT</span>
+                        </a>
                     </div>
                     <p class="footer-tagline">La criptomoneda para un mundo mejor.</p>
                 </div>
