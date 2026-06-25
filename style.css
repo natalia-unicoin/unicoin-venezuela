@@ -1588,3 +1588,15 @@ button, input, select {
     line-height: 1.15 !important;
 }
 
+.section-subtitle,
+.match-highlight,
+.pillars-title,
+.videos-section-title,
+.allies-title {
+    color: #000000 !important;
+}
+
+.cta-title {
+    color: #ffffff !important;
+}
+
