@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apoya a Venezuela | Campaña de Donaciones Terremoto</title>
+    
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,400;1,500;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Link styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Nav Bar -->
+    <header class="nav-bar">
+        <div class="nav-logos">
+            <!-- Unicoin Foundation Logo -->
+            <a href="https://unicoin.org/" target="_blank" class="logo-link">
+                <img src="unicoinfoundation_logo.png" alt="Unicoin Foundation Logo" class="logo-unicoin-img">
+            </a>
+            
+            <div class="logo-divider"></div>
+            
+            <!-- Influur Logo -->
+            <a href="https://www.influur.com" target="_blank" class="logo-link logo-influur">
+                influur<span class="pink-dot">.com</span>
+            </a>
+        </div>
+        
+        <nav class="nav-links">
+            <a href="#sobre-nosotros">SOBRE NOSOTROS</a>
+            <a href="#impacto">IMPACTO</a>
+            <a href="#como-funciona">CÓMO FUNCIONA</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contacto">CONTACTO</a>
+        </nav>
+        
+        <div class="nav-cta">
+            <button class="btn btn-primary open-modal-btn">DONAR AHORA</button>
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav">
+        <a href="#sobre-nosotros" class="mobile-link">SOBRE NOSOTROS</a>
+        <a href="#impacto" class="mobile-link">IMPACTO</a>
+        <a href="#como-funciona" class="mobile-link">CÓMO FUNCIONA</a>
+        <a href="#faq" class="mobile-link">FAQ</a>
+        <a href="#contacto" class="mobile-link">CONTACTO</a>
+        <button class="btn btn-primary open-modal-btn w-full" style="margin-top: 20px;">DONAR AHORA</button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="sobre-nosotros">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <div class="hero-text-box">
+                <span class="hero-pretitle">APOYA A</span>
+                <h1 class="hero-title">VENEZUELA</h1>
+                <h2 class="hero-tagline">ESPERANZA. ALIVIO. FUTURO.</h2>
+                <div class="hero-highlight">JUNTOS, PODEMOS.</div>
+                <p class="hero-description">
+                    Familias en toda Venezuela están enfrentando dificultades inimaginables debido al terremoto. Tu donación de hoy proporciona ayuda crítica inmediata: alimentos, medicinas, refugio y esperanza.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary btn-large open-modal-btn">DONAR AHORA</button>
+                    <div class="secure-badge">
+                        <svg class="secure-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                        <span>Donación Segura. Transparente. 100% de Impacto.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners / Powered By Section -->
+    <section class="partners-section">
+        <div class="container">
+            <h2 class="section-subtitle">POTENCIADO POR EL PROPÓSITO. IMPULSADO POR LA COMUNIDAD.</h2>
+            
+            <div class="partners-grid">
+                <!-- Unicoin Box -->
+                <a href="https://unicoin.org/" target="_blank" class="partner-card">
+                    <div class="partner-header">
+                        <img src="unicoinfoundation_logo.png" alt="Unicoin Foundation Logo" class="partner-unicoin-logo">
+                    </div>
+                    <p class="partner-description">
+                        Construyendo un mundo mejor a través de la filantropía impulsada por la tecnología blockchain y el empoderamiento financiero.
+                    </p>
+                </a>
+
+                <!-- Heart Icon Divider -->
+                <div class="partner-divider">
+                    <svg class="divider-heart" viewBox="0 0 24 24" fill="none" stroke="#D4AF37" stroke-width="1.5">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                </div>
+
+                <!-- Influur Box -->
+                <a href="https://www.influur.com" target="_blank" class="partner-card">
+                    <div class="partner-header">
+                        <div class="influur-card-logo">
+                            influur<span class="pink-dot">.com</span>
+                        </div>
+                    </div>
+                    <p class="partner-description">
+                        La plataforma global que conecta a influenciadores, marcas y causas benéficas para cocrear un impacto social real.
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Match / Amin H. Section -->
+    <section class="match-section" id="como-funciona">
+        <div class="container">
+            <div class="match-container">
+                <div class="match-badge">DONACIÓN DUPLICADA</div>
+                
+                <div class="match-grid">
+                    <!-- Left: Unicoin Coin Image -->
+                    <div class="match-image-box">
+                        <img src="unicoin_coin.png" alt="Unicoin Gold Coin" class="coin-image">
+                    </div>
+                    
+                    <!-- Right: Info -->
+                    <div class="match-info-box">
+                        <h3 class="match-title">AMIN H. SE COMPROMETE A DUPLICAR LAS DONACIONES</h3>
+                        <h4 class="match-highlight">DÓLAR POR DÓLAR CON UNICOIN</h4>
+                        <p class="match-description">
+                            Todas las donaciones realizadas para apoyar a Venezuela serán igualadas y duplicadas dólar por dólar con la criptomoneda Unicoin, multiplicando el alcance y la ayuda humanitaria final.
+                        </p>
+                        
+                        <!-- Visual Diagram -->
+                        <div class="match-diagram">
+                            <div class="diagram-step">
+                                <div class="diagram-icon-circle">
+                                    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                    </svg>
+                                </div>
+                                <span class="diagram-label">TU DONACIÓN</span>
+                            </div>
+                            
+                            <div class="diagram-operator">=</div>
+                            
+                            <div class="diagram-step">
+                                <div class="diagram-icon-circle gold-border">
+                                    <img src="unicoin_coin.png" alt="Coin" class="diagram-coin-mini">
+                                </div>
+                                <span class="diagram-label">UNICOIN APORTA EL DOBLE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Pillars Section (YOUR SUPPORT PROVIDES) -->
+    <section class="support-pillars-section" id="impacto">
+        <div class="container">
+            <h2 class="pillars-title">TU APOYO PROPORCIONA</h2>
+            
+            <div class="pillars-grid">
+                <!-- Pillar 1: Food -->
+                <div class="pillar-card">
+                    <div class="pillar-icon-wrapper">
+                        <!-- Custom SVG for Food (Bowl / Wheat) -->
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" class="pillar-icon">
+                            <path d="M8 36c0 10 8 18 18 18h16c10 0 18-8 18-18H8z" stroke-linejoin="round"/>
+                            <path d="M16 26c0-6 4-10 4-10s4 4 4 10M32 26c0-6 4-10 4-10s4 4 4 10M48 26c0-6 4-10 4-10s4 4 4 10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6 36h52" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="pillar-name">ALIMENTOS</h3>
+                    <p class="pillar-description">Comidas nutritivas y cajas de alimentos esenciales para familias en situación de emergencia.</p>
+                </div>
+
+                <!-- Pillar 2: Medicine -->
+                <div class="pillar-card">
+                    <div class="pillar-icon-wrapper">
+                        <!-- Custom SVG for Medicine (First Aid Cross / Pill) -->
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" class="pillar-icon">
+                            <rect x="10" y="14" width="44" height="40" rx="6" stroke-linejoin="round"/>
+                            <path d="M24 14V8h16v6M32 26v16M24 34h16" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="pillar-name">MEDICINAS</h3>
+                    <p class="pillar-description">Medicamentos esenciales, kits de primeros auxilios e insumos médicos de emergencia.</p>
+                </div>
+
+                <!-- Pillar 3: Shelter -->
+                <div class="pillar-card">
+                    <div class="pillar-icon-wrapper">
+                        <!-- Custom SVG for Shelter (House) -->
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" class="pillar-icon">
+                            <path d="M32 8L6 30h8v24h36V30h8L32 8z" stroke-linejoin="round"/>
+                            <path d="M26 54V38h12v16" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="pillar-name">REFUGIO</h3>
+                    <p class="pillar-description">Espacios de refugio seguros y temporales, colchonetas, mantas y kits de higiene básica.</p>
+                </div>
+
+                <!-- Pillar 4: Hope -->
+                <div class="pillar-card">
+                    <div class="pillar-icon-wrapper">
+                        <!-- Custom SVG for Hope (People holding hands / family) -->
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.5" class="pillar-icon">
+                            <circle cx="20" cy="22" r="6"/>
+                            <path d="M8 46c0-6 6-10 12-10s12 4 12 10" stroke-linecap="round"/>
+                            <circle cx="44" cy="22" r="6"/>
+                            <path d="M32 46c0-6 6-10 12-10s12 4 12 10" stroke-linecap="round"/>
+                            <path d="M26 34c3 1.5 5 1.5 8 0" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="pillar-name">ESPERANZA</h3>
+                    <p class="pillar-description">Apoyo emocional, reconstrucción de espacios comunitarios y resiliencia para el futuro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos / Campaign & Influencers Section -->
+    <section class="videos-section" id="videos">
+        <div class="container">
+            <h2 class="videos-section-title">VOCES DE APOYO Y CAMPAÑA</h2>
+            <p class="videos-section-subtitle">Mira los testimonios e iniciativas de los influenciadores que se suman a esta causa.</p>
+            
+            <div class="videos-grid">
+                <!-- Video 1 -->
+                <div class="video-card">
+                    <div class="video-thumbnail-wrapper">
+                        <div class="video-play-btn">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                <polygon points="6 4 20 12 6 20 6 4"/>
+                            </svg>
+                        </div>
+                        <div class="video-placeholder-bg" style="background-image: linear-gradient(135deg, #e2c067 0%, #f03e80 100%);"></div>
+                    </div>
+                    <div class="video-info">
+                        <span class="video-tag">Influencer</span>
+                        <h3 class="video-card-title">Mensaje de solidaridad por Venezuela</h3>
+                        <p class="video-card-desc">Conoce por qué nos unimos en esta campaña humanitaria global.</p>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="video-card">
+                    <div class="video-thumbnail-wrapper">
+                        <div class="video-play-btn">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                <polygon points="6 4 20 12 6 20 6 4"/>
+                            </svg>
+                        </div>
+                        <div class="video-placeholder-bg" style="background-image: linear-gradient(135deg, #f03e80 0%, #7414ca 100%);"></div>
+                    </div>
+                    <div class="video-info">
+                        <span class="video-tag">Campaña</span>
+                        <h3 class="video-card-title">El impacto de tu ayuda en el terreno</h3>
+                        <p class="video-card-desc">Cómo se distribuyen los alimentos, medicinas y kits de auxilio.</p>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="video-card">
+                    <div class="video-thumbnail-wrapper">
+                        <div class="video-play-btn">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                <polygon points="6 4 20 12 6 20 6 4"/>
+                            </svg>
+                        </div>
+                        <div class="video-placeholder-bg" style="background-image: linear-gradient(135deg, #7414ca 0%, #e2c067 100%);"></div>
+                    </div>
+                    <div class="video-info">
+                        <span class="video-tag">Impacto</span>
+                        <h3 class="video-card-title">Testimonios de las familias asistidas</h3>
+                        <p class="video-card-desc">La voz de quienes reciben tu apoyo directo duplicado por Unicoin.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Allies / Partners Section -->
+    <section class="allies-section">
+        <div class="container">
+            <h3 class="allies-title">ALIADOS QUE SE SUMAN A LA INICIATIVA</h3>
+            <div class="allies-logos-grid">
+                <div class="ally-logo-card">Socio Iniciativa</div>
+                <div class="ally-logo-card">Organización Aliada</div>
+                <div class="ally-logo-card">Fundación Ayuda</div>
+                <div class="ally-logo-card">Causa Común</div>
+                <div class="ally-logo-card">Apoyo Global</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom CTA Section -->
+    <section class="bottom-cta-section">
+        <div class="cta-overlay"></div>
+        <div class="cta-content container">
+            <h2 class="cta-title">JUNTOS PODEMOS LLEVAR ESPERANZA A MILLONES.</h2>
+            <div class="cta-handwritten">Gracias por apoyar a Venezuela.</div>
+            <button class="btn btn-primary btn-large open-modal-btn" style="margin-top: 30px;">DONAR AHORA</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section" id="contacto">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="https://unicoin.com" target="_blank" class="footer-logo">UNICOIN.COM</a>
+                    <p class="footer-tagline">La criptomoneda para un mundo mejor.</p>
+                </div>
+                
+                <div class="footer-links-grid">
+                    <a href="#">Transparencia</a>
+                    <a href="#">Seguridad</a>
+                    <a href="#">Comunidad</a>
+                    <a href="#">Sostenibilidad</a>
+                </div>
+                
+                <div class="footer-socials">
+                    <span class="socials-title">SIGUE EL IMPACTO</span>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.41 19c1.71.46 8.59.46 8.59.46s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-credits">Desarrollado por <a href="https://unicoin.org" target="_blank" style="text-decoration: underline;">Unicoin Foundation</a> e <a href="https://www.influur.com" target="_blank" style="text-decoration: underline;">Influur.com</a> | Juntos creamos un impacto duradero.</p>
+                <div class="footer-secure-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                    <span>Donaciones seguras. Impacto real. Siempre.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Donation Modal -->
+    <div class="donation-modal-overlay" id="donationModal">
+        <div class="donation-modal">
+            <button class="close-modal-btn-x" aria-label="Cerrar modal">&times;</button>
+            
+            <div class="modal-header">
+                <h3>TU DONACIÓN SE DUPLICA</h3>
+                <p>Ingresa un monto para ver el impacto de tu donación y el aporte igualado por Unicoin.</p>
+            </div>
+            
+            <form class="donation-form" id="donationForm">
+                <!-- Amount Selector -->
+                <div class="amount-selector-group">
+                    <label class="form-label">Monto a Donar (USD)</label>
+                    <div class="amount-presets">
+                        <button type="button" class="preset-btn" data-amount="25">$25</button>
+                        <button type="button" class="preset-btn active" data-amount="50">$50</button>
+                        <button type="button" class="preset-btn" data-amount="100">$100</button>
+                        <button type="button" class="preset-btn" data-amount="250">$250</button>
+                        <button type="button" class="preset-btn" data-amount="500">$500</button>
+                    </div>
+                    
+                    <div class="custom-amount-wrapper">
+                        <span class="currency-symbol">$</span>
+                        <input type="number" id="customAmountInput" class="custom-amount-input" value="50" min="5" placeholder="Otro monto">
+                    </div>
+                </div>
+                
+                <!-- Match Display Live -->
+                <div class="modal-match-box">
+                    <div class="match-row">
+                        <span>Tu donación:</span>
+                        <span class="match-val" id="userDonationVal">$50.00 USD</span>
+                    </div>
+                    <div class="match-row divider">
+                        <span>Aporte Unicoin (Match):</span>
+                        <span class="match-val gold" id="unicoinMatchVal">+ 100.00 UNIC</span>
+                    </div>
+                    <div class="match-row total">
+                        <span>Impacto Total Multiplicado:</span>
+                        <span class="match-val highlight" id="totalImpactVal">$100.00 USD</span>
+                    </div>
+                </div>
+
+                <!-- Payment Method -->
+                <div class="payment-method-group">
+                    <label class="form-label">Método de Pago</label>
+                    <div class="payment-grid">
+                        <label class="payment-card active">
+                            <input type="radio" name="paymentMethod" value="card" checked>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                                <line x1="1" y1="10" x2="23" y2="10"></line>
+                            </svg>
+                            <span>Tarjeta de Crédito</span>
+                        </label>
+                        
+                        <label class="payment-card">
+                            <input type="radio" name="paymentMethod" value="paypal">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"></path>
+                            </svg>
+                            <span>PayPal</span>
+                        </label>
+
+                        <label class="payment-card">
+                            <input type="radio" name="paymentMethod" value="crypto">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 8V16M8 12H16"></path>
+                            </svg>
+                            <span>Criptomonedas</span>
+                        </label>
+                        
+                        <label class="payment-card">
+                            <input type="radio" name="paymentMethod" value="bank">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="9" y1="21" x2="9" y2="9"></line>
+                                <line x1="15" y1="21" x2="15" y2="9"></line>
+                                <line x1="3" y1="9" x2="21" y2="9"></line>
+                            </svg>
+                            <span>Transferencia Bancaria</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Bank Transfer Details Container (Hidden by default, shown when bank is active) -->
+                <div class="bank-details-box" id="bankDetailsBox" style="display: none;">
+                    <div class="bank-details-header">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="9" y1="21" x2="9" y2="9"></line>
+                            <line x1="15" y1="21" x2="15" y2="9"></line>
+                            <line x1="3" y1="9" x2="21" y2="9"></line>
+                        </svg>
+                        <span>Detalles de Transferencia</span>
+                    </div>
+                    <div class="bank-details-content">
+                        <p class="bank-warning"><strong>Próximamente:</strong> Estamos configurando la cuenta bancaria oficial de la organización aliada encargada de recolectar los fondos. Los datos de transferencia estarán disponibles aquí a la brevedad.</p>
+                    </div>
+                </div>
+
+                <!-- Personal Info -->
+                <div class="personal-info-group">
+                    <div class="form-row">
+                        <div class="form-col">
+                            <input type="text" class="form-input" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="form-col">
+                            <input type="email" class="form-input" placeholder="Email" required>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-full btn-large" style="margin-top: 10px;">CONFIRMAR Y DONAR</button>
+                <p class="modal-disclaimer">Al donar, aceptas nuestros términos de servicio y políticas de transparencia.</p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Feedback Overlay -->
+    <div class="success-overlay" id="successOverlay">
+        <div class="success-box">
+            <svg class="success-check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <h3>¡Muchas gracias por tu apoyo!</h3>
+            <p>Tu donación ha sido registrada. Amin H. y Unicoin Foundation duplicarán el monto para potenciar el impacto en Venezuela.</p>
+            <button class="btn btn-primary" id="closeSuccessBtn">Aceptar</button>
+        </div>
+    </div>
+
+    <!-- Script file link -->
+    <script src="script.js"></script>
+</body>
+</html>
