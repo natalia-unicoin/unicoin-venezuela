@@ -35,9 +35,9 @@
     --space-xl: 8rem;     /* 128px */
     
     /* Misc */
-    --radius-sm: 6px;
-    --radius-md: 16px;
-    --radius-lg: 32px;
+    --radius-sm: 5px;
+    --radius-md: 5px;
+    --radius-lg: 5px;
     --radius-full: 9999px;
     --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     --layout-max-width: 1400px;
@@ -98,7 +98,7 @@ button, input, select {
     align-items: center;
     justify-content: center;
     padding: 14px 28px;
-    border-radius: var(--radius-full);
+    border-radius: var(--radius-sm);
     font-family: var(--font-title);
     font-size: 14px;
     font-weight: 600;
