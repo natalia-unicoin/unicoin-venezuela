@@ -1251,17 +1251,35 @@ button, input, select {
         --space-xl: 5rem;
     }
     
-    /* Navigation */
-    .nav-links {
-        display: none;
+    /* Navigation Adjustments for Logos and Actions */
+    .nav-bar {
+        padding: 16px 4vw;
     }
     
-    .mobile-menu-toggle {
-        display: flex;
+    .logo-unicoin-img {
+        height: 24px !important;
     }
     
-    .nav-cta .btn {
-        display: none; /* Hide top CTA button in mobile, handled by mobile drawer */
+    .logo-influur-img {
+        height: 12px !important;
+    }
+    
+    .logo-influur-wrapper .logo-tagline {
+        font-size: 5px !important;
+        letter-spacing: 0.2px !important;
+    }
+    
+    .logo-divider {
+        height: 24px !important;
+    }
+    
+    .nav-actions {
+        gap: 14px !important;
+    }
+    
+    .nav-actions .btn {
+        padding: 10px 16px !important;
+        font-size: 12px !important;
     }
     
     /* Hero */
@@ -1270,7 +1288,10 @@ button, input, select {
     }
     
     .hero-overlay {
-        background: rgba(255, 255, 255, 0.85);
+        background: linear-gradient(180deg, 
+            rgba(7, 9, 14, 0.9) 0%, 
+            rgba(7, 9, 14, 0.75) 100%
+        );
     }
     
     .hero-text-box {
@@ -1341,6 +1362,35 @@ button, input, select {
 }
 
 @media (max-width: 480px) {
+    .nav-bar {
+        padding: 12px 3vw !important;
+    }
+    
+    .logo-unicoin-img {
+        height: 20px !important;
+    }
+    
+    .logo-influur-img {
+        height: 10px !important;
+    }
+    
+    .logo-influur-wrapper .logo-tagline {
+        display: none !important;
+    }
+    
+    .logo-divider {
+        height: 20px !important;
+    }
+    
+    .nav-actions {
+        gap: 10px !important;
+    }
+    
+    .nav-actions .btn {
+        padding: 8px 12px !important;
+        font-size: 11px !important;
+    }
+
     .pillars-grid {
         grid-template-columns: 1fr;
     }
