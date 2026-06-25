@@ -1570,24 +1570,37 @@ button, input, select {
 }
 
 .ally-logo-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--color-light-card);
     border: 1px solid var(--color-border-light);
     border-radius: var(--radius-sm);
-    padding: 18px 30px;
-    font-family: var(--font-title);
-    font-weight: 700;
-    font-size: 13px;
-    letter-spacing: 1px;
-    color: var(--color-text-muted-dark);
+    padding: 12px 24px;
+    width: 180px;
+    height: 60px;
     transition: var(--transition-smooth);
     user-select: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
 }
 
+.ally-logo-svg {
+    height: 24px;
+    width: 100%;
+    max-width: 100%;
+    color: var(--color-text-muted-dark);
+    fill: none;
+    transition: var(--transition-smooth);
+}
+
 .ally-logo-card:hover {
     border-color: var(--color-gold);
-    color: var(--color-text-dark);
     transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+.ally-logo-card:hover .ally-logo-svg {
+    color: var(--color-text-dark);
 }
 
 /* --- BANK DETAILS BOX --- */
