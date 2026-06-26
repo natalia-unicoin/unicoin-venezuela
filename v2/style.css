@@ -140,7 +140,7 @@ button, input, select {
     align-items: center;
     padding: 24px 4vw 16px;
     z-index: 100;
-    background-color: transparent;
+    background-color: #07090e;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
