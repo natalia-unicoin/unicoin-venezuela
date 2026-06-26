@@ -622,7 +622,7 @@ button, input, select {
     padding: 100px 0;
     background-image: url('../unicoin_match_bg.jpg');
     background-size: cover;
-    background-position: left center;
+    background-position: right center;
     background-repeat: no-repeat;
     background-color: #f6f5f3;
 }
@@ -638,7 +638,7 @@ button, input, select {
 
 .match-grid {
     display: grid;
-    grid-template-columns: 1.15fr 1fr;
+    grid-template-columns: 1fr 1.15fr;
     gap: var(--space-lg);
     align-items: center;
 }
@@ -712,14 +712,15 @@ button, input, select {
 
 .progress-bar-fill {
     height: 100%;
-    background: linear-gradient(90deg, var(--color-gold) 0%, var(--color-pink) 100%);
+    background: linear-gradient(90deg, var(--color-gold) 0%, var(--color-gold-hover) 100%);
     border-radius: var(--radius-full);
 }
 
 .progress-disclaimer {
-    font-size: 12px;
+    font-size: 13px;
     color: var(--color-text-muted-dark);
     margin: 0;
+    line-height: 1.5;
 }
 
 /* Match Diagram */
@@ -1020,7 +1021,7 @@ button, input, select {
     font-size: 20px;
     font-weight: 700;
     color: var(--color-text-dark);
-    margin-bottom: 28px;
+    margin-bottom: 16px;
 }
 
 .contacts-list {
@@ -1085,6 +1086,7 @@ button, input, select {
     transition: var(--transition-smooth);
 }
 
+.contacts-header,
 .supplies-header {
     display: flex;
     align-items: center;
@@ -1092,10 +1094,12 @@ button, input, select {
     margin-bottom: 24px;
 }
 
+.contacts-icon,
 .supplies-icon {
-    color: var(--color-pink);
+    color: var(--color-gold);
 }
 
+.contacts-header h4,
 .supplies-header h4 {
     font-family: var(--font-title);
     font-size: 13px;
@@ -1141,7 +1145,7 @@ button, input, select {
 
 .supplies-list li::before {
     content: '→';
-    color: var(--color-pink);
+    color: var(--color-gold);
     font-size: 14px;
     font-weight: 700;
     position: absolute;
