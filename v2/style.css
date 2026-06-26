@@ -15,10 +15,10 @@
     --color-gold-glow: rgba(197, 160, 67, 0.15);
     --color-pink: #f03e80;         /* Influur brand pink */
     
-    --color-text-light: #1e2229;   /* Text on main background is now dark */
-    --color-text-muted-light: #6e7582; /* Muted text */
-    --color-text-dark: #1e2229;
-    --color-text-muted-dark: #6e7582;
+    --color-text-light: #000000;   /* Pure black for high contrast */
+    --color-text-muted-light: #3e4450; /* Dark charcoal/grey for muted text */
+    --color-text-dark: #000000;
+    --color-text-muted-dark: #3e4450;
     --color-border-dark: #e6e9f0;  /* Borders are now light grey */
     --color-border-light: #e6e3dd;
 
