@@ -1715,6 +1715,11 @@ button, input, select {
         --space-xl: 5rem;
     }
     
+    
+    .hero-br {
+        display: none;
+    }
+    
     /* Navigation Adjustments for Logos and Actions */
     .nav-bar {
         padding: 16px 4vw;
