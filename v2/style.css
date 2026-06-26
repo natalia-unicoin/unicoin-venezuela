@@ -1174,7 +1174,7 @@ button, input, select {
     align-items: center;
     position: relative;
     overflow: hidden;
-    border: 1px solid rgba(0, 0, 0, 0.08);
+    border: none;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.02);
 }
 
