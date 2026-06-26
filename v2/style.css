@@ -1341,6 +1341,18 @@ button, input, select {
     display: block;
 }
 
+.footer-logo-tube-wrapper {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.footer-logo-tube-img {
+    height: 24px;
+    width: auto;
+    display: block;
+}
+
 .footer-tagline {
     font-size: 13px;
     color: var(--color-text-muted-dark);
