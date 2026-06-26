@@ -773,7 +773,7 @@ button, input, select {
     position: relative;
     overflow: hidden;
     border-radius: var(--radius-lg);
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 3 / 4.4;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -795,7 +795,7 @@ button, input, select {
 .pillar-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.85) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0.92) 100%);
     z-index: 2;
     transition: var(--transition-smooth);
 }
@@ -803,7 +803,7 @@ button, input, select {
 .pillar-info {
     position: relative;
     z-index: 3;
-    padding: 24px;
+    padding: 28px 20px;
     color: #ffffff;
     text-align: center;
 }
@@ -811,15 +811,15 @@ button, input, select {
 .pillar-name {
     font-family: var(--font-title);
     font-weight: 700;
-    font-size: clamp(20px, 2.5vw, 24px);
+    font-size: clamp(21px, 2.5vw, 25px);
     letter-spacing: -0.5px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     color: #ffffff;
 }
 
 .pillar-description {
-    font-size: 13px;
-    color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.95);
     line-height: 1.5;
     margin: 0;
 }
@@ -1895,6 +1895,10 @@ button, input, select {
 
     .pillars-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .pillar-card {
+        aspect-ratio: 16 / 10;
     }
     
     .amount-presets {
