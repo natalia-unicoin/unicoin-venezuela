@@ -1010,7 +1010,7 @@ button, input, select {
 }
 
 .resources-contacts-box:hover,
-.people-finder-card:hover {
+.supplies-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04);
 }
@@ -1073,9 +1073,9 @@ button, input, select {
     color: var(--color-gold-hover);
 }
 
-.people-finder-card {
+.supplies-card {
     background-color: var(--color-light-card);
-    border: 1px solid var(--color-border-dark);
+    border: 1px solid var(--color-border-light);
     border-radius: var(--radius-md);
     padding: 40px;
     display: flex;
@@ -1085,37 +1085,27 @@ button, input, select {
     transition: var(--transition-smooth);
 }
 
-.finder-header {
+.supplies-header {
     display: flex;
     align-items: center;
     gap: 12px;
     margin-bottom: 24px;
 }
 
-.google-logo {
-    font-family: var(--font-title);
-    font-size: 22px;
-    font-weight: 700;
-    letter-spacing: -0.5px;
+.supplies-icon {
+    color: var(--color-pink);
 }
 
-.g-blue { color: #4285F4; }
-.g-red { color: #EA4335; }
-.g-yellow { color: #FBBC05; }
-.g-green { color: #34A853; }
-
-.finder-header h4 {
+.supplies-header h4 {
     font-family: var(--font-title);
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--color-text-muted-dark);
-    border-left: 1px solid var(--color-border-dark);
-    padding-left: 12px;
 }
 
-.people-finder-card h3 {
+.supplies-card h3 {
     font-family: var(--font-title);
     font-size: 20px;
     font-weight: 700;
@@ -1123,39 +1113,42 @@ button, input, select {
     margin-bottom: 16px;
 }
 
-.people-finder-card p {
-    font-size: 14px;
+.supplies-card p {
+    font-size: 14.5px;
     color: var(--color-text-muted-dark);
     line-height: 1.6;
-    margin-bottom: 32px;
-    flex-grow: 1;
+    margin-bottom: 24px;
 }
 
-.finder-btn {
+.supplies-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     width: 100%;
-    background-color: #111622 !important;
-    color: #ffffff !important;
-    border: 1px solid #111622 !important;
-    padding: 14px 24px;
-    font-weight: 700;
-    font-size: 13px;
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-    border-radius: 9999px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(17, 22, 34, 0.08);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 20px;
 }
 
-.finder-btn:hover {
-    background-color: #1c2333 !important;
-    border-color: #1c2333 !important;
-    color: #ffffff !important;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(17, 22, 34, 0.15);
+.supplies-list li {
+    font-size: 14.5px;
+    color: var(--color-text-dark);
+    font-weight: 600;
+    position: relative;
+    padding-left: 24px;
+    line-height: 1.4;
 }
+
+.supplies-list li::before {
+    content: '→';
+    color: var(--color-pink);
+    font-size: 14px;
+    font-weight: 700;
+    position: absolute;
+    left: 4px;
+    top: 0px;
+}
+
 
 /* Creator Callout Section */
 .creator-callout-section {
@@ -2468,6 +2461,12 @@ button, input, select {
 @media (max-width: 768px) {
     .reward-card {
         padding: 36px 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .supplies-list {
+        grid-template-columns: 1fr;
     }
 }
 
