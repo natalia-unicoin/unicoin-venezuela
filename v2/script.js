@@ -222,8 +222,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 const name = document.getElementById('creatorName').value;
                 const email = document.getElementById('creatorEmail').value;
                 const social = document.getElementById('creatorSocial').value;
+                const phone = document.getElementById('creatorPhone').value;
                 
-                console.log(`Creator registered: ${name} (${email}) - ${social}`);
+                console.log(`Creator registered: ${name} (${email}) - Social: ${social} - Phone: ${phone}`);
                 
                 closeCreator();
                 
