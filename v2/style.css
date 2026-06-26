@@ -459,9 +459,10 @@ button, input, select {
     margin-bottom: 24px;
 }
 
-.help-icon-box svg {
-    width: 24px;
-    height: 24px;
+.help-card-img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
 }
 
 .help-card h3 {
@@ -778,14 +779,14 @@ button, input, select {
 }
 
 .pillar-card:hover .pillar-icon-wrapper {
-    background-color: var(--color-gold);
     border-color: var(--color-gold);
-    color: #ffffff;
+    transform: scale(1.05);
 }
 
-.pillar-icon {
-    width: 32px;
-    height: 32px;
+.pillar-card-img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
 }
 
 .pillar-name {
