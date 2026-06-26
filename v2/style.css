@@ -343,7 +343,7 @@ button, input, select {
     align-items: center;
     justify-content: center;
     gap: var(--space-md);
-    max-width: 800px;
+    max-width: 1050px;
     margin: 0 auto;
 }
 
@@ -380,6 +380,19 @@ button, input, select {
 .partner-influur-logo {
     height: 24px;
     width: auto;
+}
+
+.partner-tube-logo {
+    height: 28px;
+    width: auto;
+}
+
+.partner-logo-text {
+    font-family: var(--font-title);
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--color-text-dark);
+    letter-spacing: -0.5px;
 }
 
 .partner-description {
@@ -1791,11 +1804,6 @@ button, input, select {
     .partners-grid {
         flex-direction: column;
         gap: 16px;
-    }
-    
-    .partner-divider {
-        transform: rotate(90deg);
-        margin: 8px 0;
     }
     
     .partner-card {
