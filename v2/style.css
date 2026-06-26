@@ -797,6 +797,7 @@ button, input, select {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 4px solid transparent;
     padding: 24px 30px;
     border-radius: var(--radius-md);
     display: flex;
@@ -813,16 +814,18 @@ button, input, select {
 }
 
 .stat-card.gold-border {
-    border-left: 4px solid #fcd144;
+    border-left-color: #fcd144;
 }
 
 .stat-number {
     font-family: var(--font-title);
-    font-size: clamp(42px, 6vw, 54px);
+    font-size: clamp(40px, 5.5vw, 50px);
     font-weight: 900;
     color: #fcd144;
     line-height: 1;
-    min-width: 130px;
+    width: 170px;
+    flex-shrink: 0;
+    white-space: nowrap;
     text-shadow: 0 2px 10px rgba(252, 209, 68, 0.2);
 }
 
@@ -2098,6 +2101,12 @@ button, input, select {
         text-align: center;
         gap: 12px;
         padding: 20px;
+    }
+    
+    .stat-card .stat-number {
+        width: auto;
+        min-width: auto;
+        white-space: normal;
     }
 }
 
