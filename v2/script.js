@@ -168,6 +168,107 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // --- FAQ Accordion ---
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    faqQuestions.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const faqItem = btn.parentElement;
+            const faqAnswer = faqItem.querySelector('.faq-answer');
+            const isActive = faqItem.classList.contains('active');
+            
+            // Close other items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+                item.querySelector('.faq-answer').style.maxHeight = '0';
+            });
+            
+            if (!isActive) {
+                faqItem.classList.add('active');
+                faqAnswer.style.maxHeight = faqAnswer.scrollHeight + 'px';
+            }
+        });
+    });
+
+    // --- Creator Modal Open / Close ---
+    const openCreatorModalBtn = document.querySelector('.open-creator-modal-btn');
+    const creatorModal = document.getElementById('creatorModal');
+    const closeCreatorBtn = document.querySelector('.close-creator-btn');
+    const creatorForm = document.getElementById('creatorForm');
+
+    if (openCreatorModalBtn && creatorModal) {
+        openCreatorModalBtn.addEventListener('click', () => {
+            creatorModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+
+        const closeCreator = () => {
+            creatorModal.classList.remove('active');
+            document.body.style.overflow = '';
+        };
+
+        if (closeCreatorBtn) {
+            closeCreatorBtn.addEventListener('click', closeCreator);
+        }
+
+        creatorModal.addEventListener('click', (e) => {
+            if (e.target === creatorModal) {
+                closeCreator();
+            }
+        });
+
+        if (creatorForm) {
+            creatorForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const name = document.getElementById('creatorName').value;
+                const email = document.getElementById('creatorEmail').value;
+                const social = document.getElementById('creatorSocial').value;
+                
+                console.log(`Creator registered: ${name} (${email}) - ${social}`);
+                
+                closeCreator();
+                
+                // Show a simple success alert or use the same success overlay
+                alert('¡Gracias por unirte! Nos pondremos en contacto contigo pronto con el kit de prensa.');
+                creatorForm.reset();
+            });
+        }
+    }
+
+    // --- Share Campaign Button ---
+    const shareBtns = document.querySelectorAll('.share-campaign-btn');
+    shareBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const pageUrl = window.location.href;
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(pageUrl).then(() => {
+                    alert('Enlace copiado al portapapeles. ¡Comparte el mensaje!');
+                }).catch(err => {
+                    console.error('Error copying text: ', err);
+                });
+            } else {
+                alert(`Comparte este enlace: ${pageUrl}`);
+            }
+        });
+    });
+
+    // --- Smooth Scrolling for internal links ---
+    const scrollLinks = document.querySelectorAll('.scroll-link');
+    scrollLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            const targetId = link.getAttribute('href');
+            if (targetId && targetId.startsWith('#')) {
+                e.preventDefault();
+                const targetEl = document.querySelector(targetId);
+                if (targetEl) {
+                    targetEl.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }
+        });
+    });
+
     // Initialize calculation
     calculateMatch(50);
 });
