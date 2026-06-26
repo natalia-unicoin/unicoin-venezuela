@@ -170,24 +170,13 @@ button, input, select {
 
 .logo-influur-wrapper {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     text-decoration: none;
-    line-height: 1;
 }
 
 .logo-influur-img {
     height: 16px;
     width: auto;
-}
-
-.logo-influur-wrapper .logo-tagline {
-    font-family: var(--font-title);
-    font-size: 7px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    color: rgba(255, 255, 255, 0.7);
-    margin-top: 3px;
 }
 
 .nav-actions {
@@ -776,27 +765,14 @@ button, input, select {
 
 .footer-logo-influur-wrapper {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    line-height: 1;
 }
 
 .footer-logo-influur-img {
     height: 15px;
     width: auto;
     display: block;
-}
-
-.footer-logo-tagline {
-    font-family: var(--font-title);
-    font-size: 6px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    color: var(--color-text-muted-dark);
-    margin-top: 3px;
-    line-height: 1;
 }
 
 .footer-tagline {
@@ -1270,11 +1246,6 @@ button, input, select {
         height: 12px !important;
     }
     
-    .logo-influur-wrapper .logo-tagline {
-        font-size: 5px !important;
-        letter-spacing: 0.2px !important;
-    }
-    
     .logo-divider {
         height: 24px !important;
     }
@@ -1378,10 +1349,6 @@ button, input, select {
     
     .logo-influur-img {
         height: 10px !important;
-    }
-    
-    .logo-influur-wrapper .logo-tagline {
-        display: none !important;
     }
     
     .logo-divider {
