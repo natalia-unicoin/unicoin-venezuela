@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const unicoinMatchVal = document.getElementById('unicoinMatchVal');
     const totalImpactVal = document.getElementById('totalImpactVal');
     
-    const paymentCards = document.querySelectorAll('.payment-card');
     
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const mobileNav = document.querySelector('.mobile-nav');
@@ -123,36 +122,26 @@ document.addEventListener('DOMContentLoaded', () => {
         calculateMatch(value);
     });
 
-    // --- Payment Methods Toggle ---
-    const bankDetailsBox = document.getElementById('bankDetailsBox');
-    paymentCards.forEach(card => {
-        card.addEventListener('click', () => {
-            paymentCards.forEach(c => c.classList.remove('active'));
-            card.classList.add('active');
-            
-            // Check the hidden radio inside
-            const radio = card.querySelector('input[type="radio"]');
-            if (radio) {
-                radio.checked = true;
-                
-                // Show/hide bank transfer info box
-                if (radio.value === 'bank') {
-                    if (bankDetailsBox) bankDetailsBox.style.display = 'block';
-                } else {
-                    if (bankDetailsBox) bankDetailsBox.style.display = 'none';
-                }
-            }
-        });
-    });
-
     // --- Form Submission & Success Feedback ---
     donationForm.addEventListener('submit', (e) => {
         e.preventDefault();
         
-        // Simulating API call/payment processing
+        // Get donation details (can be used for tracking if needed)
+        const amount = customAmountInput.value;
+        const name = document.getElementById('fullName').value;
+        const email = document.getElementById('emailAddress').value;
+        const country = document.getElementById('country').value;
+        const phone = document.getElementById('phoneNumber').value;
+        
+        console.log(`Donation registered: ${amount} USD by ${name} (${email}) from ${country}, Tel: ${phone}`);
+        
+        // Open PayPal donation link in a new tab (placeholder URL, can be updated to specific PayPal link later)
+        const paypalUrl = 'https://www.paypal.com/donate';
+        window.open(paypalUrl, '_blank');
+        
         closeModal();
         
-        // Show success screen
+        // Show success screen on the landing page
         successOverlay.classList.add('active');
         document.body.style.overflow = 'hidden';
     });
@@ -164,18 +153,12 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Reset form
         donationForm.reset();
+        
         // Set back default values
         presetBtns.forEach(b => b.classList.remove('active'));
         presetBtns[1].classList.add('active'); // $50 default active
         customAmountInput.value = "50";
         calculateMatch(50);
-        
-        paymentCards.forEach(c => c.classList.remove('active'));
-        paymentCards[0].classList.add('active');
-        paymentCards[0].querySelector('input').checked = true;
-        
-        // Hide bank details on reset
-        if (bankDetailsBox) bankDetailsBox.style.display = 'none';
     };
 
     closeSuccessBtn.addEventListener('click', closeSuccess);
