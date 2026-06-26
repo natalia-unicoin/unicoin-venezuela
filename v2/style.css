@@ -1195,13 +1195,16 @@ button, input, select {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #fdfbf7 0%, #fdf2f4 100%);
-    color: var(--color-text-dark);
-    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    background: #111622;
+    color: #ffffff;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .cta-overlay {
-    display: none;
+    position: absolute;
+    inset: 0;
+    background: rgba(17, 22, 34, 0.3);
+    z-index: 1;
 }
 
 .cta-content {
@@ -1220,7 +1223,7 @@ button, input, select {
     font-weight: 800;
     font-size: clamp(28px, 4.5vw, 48px);
     line-height: 1.15;
-    color: var(--color-text-dark);
+    color: #ffffff;
     margin: 0;
 }
 
@@ -1229,7 +1232,7 @@ button, input, select {
     font-style: normal;
     font-weight: 500;
     font-size: clamp(16px, 2vw, 20px);
-    color: var(--color-pink);
+    color: #ffffff;
     margin: 0;
     letter-spacing: 0.5px;
 }
