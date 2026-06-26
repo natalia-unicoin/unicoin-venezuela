@@ -1422,6 +1422,21 @@ button, input, select {
     color: var(--color-text-muted-dark);
 }
 
+.footer-disclaimer-box {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px dotted var(--color-border-light);
+    text-align: center;
+}
+
+.footer-disclaimer-text {
+    font-size: 11px;
+    color: var(--color-text-muted-dark);
+    opacity: 0.8;
+    line-height: 1.5;
+    margin: 0;
+}
+
 /* --- INTERACTIVE MODAL --- */
 .donation-modal-overlay {
     position: fixed;
