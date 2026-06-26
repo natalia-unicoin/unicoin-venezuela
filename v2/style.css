@@ -819,7 +819,7 @@ button, input, select {
 
 .stat-number {
     font-family: var(--font-title);
-    font-size: clamp(40px, 5.5vw, 50px);
+    font-size: clamp(42px, 6vw, 52px);
     font-weight: 900;
     color: #fcd144;
     line-height: 1;
@@ -827,6 +827,12 @@ button, input, select {
     flex-shrink: 0;
     white-space: nowrap;
     text-shadow: 0 2px 10px rgba(252, 209, 68, 0.2);
+}
+
+.stat-suffix {
+    font-size: 0.62em;
+    font-weight: 500;
+    margin-left: 1px;
 }
 
 .stat-label {
