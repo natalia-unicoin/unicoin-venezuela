@@ -198,10 +198,13 @@
             <div class="match-container">
                 
                 <div class="match-grid">
-                    <!-- Left: Unicoin Coin Image -->
-                    <div class="match-image-box">
-                        <img src="../unicoin_coin_tilted.png" alt="Unicoin Gold Coin" class="coin-image">
+                    <!-- Left: Visible only on mobile/tablet to show the coin, hidden on desktop -->
+                    <div class="match-image-box mobile-only-coin">
+                        <img src="../unicoin_match_bg.jpg" alt="Unicoin Gold Coin" class="coin-image">
                     </div>
+                    
+                    <!-- Empty spacer column on desktop to let the background coin shine -->
+                    <div class="match-desktop-spacer"></div>
                     
                     <!-- Right: Info -->
                     <div class="match-info-box">
@@ -221,7 +224,7 @@
                                 <div class="progress-bar-fill" style="width: 19.3%;"></div>
                             </div>
                             <p class="progress-disclaimer">Los donantes reciben Unicoins equivalentes al monto de su donación, hasta agotar el fondo de 250,000 Unicoins aportado por la Unicoin Foundation.</p>
-                            <p class="progress-update-note" style="font-size: 11.5px; color: var(--color-text-muted-dark); opacity: 0.85; margin-top: 10px; font-style: italic; text-align: center;">* Las donaciones serán actualizadas cada 3 días laborales.</p>
+                            <p class="progress-update-note" style="font-size: 11.5px; color: var(--color-text-muted-dark); opacity: 0.85; margin-top: 10px; font-style: italic; text-align: left;">* Las donaciones serán actualizadas cada 3 días laborales.</p>
                         </div>
                         
                         <!-- Visual Diagram -->

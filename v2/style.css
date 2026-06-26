@@ -620,55 +620,43 @@ button, input, select {
 
 /* --- MATCH / AMIN H. SECTION --- */
 .match-section {
-    padding: var(--space-lg) 0;
-    background-color: #ffffff;
+    padding: 100px 0;
+    background-image: url('../unicoin_match_bg.jpg');
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-color: #f6f5f3;
 }
 
 .match-container {
-    background-color: #ffffff;
-    border: 1px solid var(--color-border-light);
-    border-radius: var(--radius-lg);
-    padding: 60px;
     position: relative;
-    overflow: hidden;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.02);
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    overflow: visible;
 }
-
-.match-container::before {
-    content: '';
-    position: absolute;
-    top: -50%; left: -20%;
-    width: 60%; height: 200%;
-    background: radial-gradient(circle, rgba(226, 192, 103, 0.05) 0%, transparent 60%);
-    pointer-events: none;
-}
-
-
 
 .match-grid {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1.15fr 1fr;
     gap: var(--space-lg);
     align-items: center;
 }
 
-.match-image-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.match-desktop-spacer {
+    display: block;
+}
+
+.mobile-only-coin {
+    display: none;
 }
 
 .coin-image {
-    width: 280px;
-    height: 280px;
-    object-fit: contain;
-    filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.15));
-    animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-12px); }
+    width: 240px;
+    height: auto;
+    border-radius: var(--radius-md);
+    filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.08));
 }
 
 .match-info-box {
@@ -1932,19 +1920,32 @@ button, input, select {
 }
 
 @media (max-width: 900px) {
+    .match-section {
+        background-image: none !important;
+        background-color: var(--color-light-bg);
+        padding: var(--space-lg) 0;
+    }
+
     .match-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         text-align: center;
         gap: var(--space-md);
     }
     
-    .match-image-box {
+    .match-desktop-spacer {
+        display: none !important;
+    }
+    
+    .mobile-only-coin {
+        display: flex !important;
+        justify-content: center;
+        margin-bottom: 24px;
         order: -1;
     }
     
     .coin-image {
         width: 200px;
-        height: 200px;
+        height: auto;
     }
     
     .match-diagram {
