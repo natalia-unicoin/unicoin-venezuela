@@ -1165,38 +1165,48 @@ button, input, select {
 }
 
 .creator-box {
-    background-color: #fdfbf7;
-    border-radius: var(--radius-lg);
-    padding: 60px;
+    background-color: #ffffff;
+    border-radius: 24px;
+    padding: 30px;
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: var(--space-md);
+    grid-template-columns: 1fr 1.15fr;
+    gap: 40px;
     align-items: center;
     position: relative;
     overflow: hidden;
-    border: 1px solid rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.02);
 }
 
-.creator-box::before {
-    content: '';
-    position: absolute;
-    top: -50%; right: -20%;
-    width: 60%; height: 200%;
-    background: radial-gradient(circle, rgba(240, 62, 128, 0.04) 0%, transparent 60%);
-    pointer-events: none;
+.creator-image-box {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+}
+
+.creator-main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1.15 / 1;
+    border-radius: 20px;
+    display: block;
 }
 
 .creator-content {
     position: relative;
     z-index: 2;
+    padding-right: 15px;
 }
 
 .creator-tag {
     font-family: var(--font-title);
     font-weight: 700;
     font-size: 11px;
-    letter-spacing: 2px;
-    color: #8e94a6;
+    letter-spacing: 1.5px;
+    color: var(--color-pink);
     display: block;
     margin-bottom: 12px;
 }
@@ -1204,23 +1214,49 @@ button, input, select {
 .creator-title {
     font-family: var(--font-title);
     font-weight: 800;
-    font-size: clamp(24px, 3.5vw, 36px);
-    line-height: 1.2;
+    font-size: clamp(24px, 3.5vw, 38px);
+    line-height: 1.15;
     color: var(--color-text-dark);
-    margin-bottom: 20px;
-    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+    letter-spacing: -0.8px;
 }
 
 .creator-text {
-    font-size: 15px;
-    color: var(--color-text-light);
+    font-size: 15.5px;
+    color: var(--color-text-muted-dark);
     line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.creator-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
     margin-bottom: 32px;
+}
+
+.creator-pill {
+    background-color: #f1f3f7;
+    color: #000000;
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    padding: 8px 14px;
+    border-radius: 9999px;
+    text-transform: uppercase;
 }
 
 .creator-actions {
     display: flex;
     gap: 16px;
+}
+
+.btn-pill {
+    border-radius: 9999px !important;
+    padding: 14px 28px !important;
+    font-weight: 700 !important;
+    font-size: 13.5px !important;
 }
 
 .btn-secondary {
@@ -2075,8 +2111,17 @@ button, input, select {
 
     .creator-box {
         grid-template-columns: 1fr;
-        padding: 40px;
+        padding: 24px;
         text-align: center;
+        gap: 24px;
+    }
+
+    .creator-image-box {
+        max-height: 280px;
+    }
+
+    .creator-pills {
+        justify-content: center;
     }
 
     .creator-actions {
