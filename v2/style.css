@@ -340,7 +340,7 @@ button, input, select {
 
 .partners-grid {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     gap: var(--space-md);
     max-width: 1050px;
@@ -350,40 +350,74 @@ button, input, select {
 .partner-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
     flex: 1;
-    background-color: var(--color-dark-card);
+    background-color: #ffffff;
     border: 1px solid var(--color-border-dark);
-    padding: 40px 32px;
     border-radius: var(--radius-md);
     transition: var(--transition-smooth);
-    min-height: 240px;
     text-decoration: none;
+    overflow: hidden;
 }
 
 .partner-card:hover {
     border-color: var(--color-gold);
     transform: translateY(-4px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
 }
 
-.partner-header {
+.partner-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.partner-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.partner-card:hover .partner-photo {
+    transform: scale(1.05);
+}
+
+.partner-logo-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 40px;
-    margin-bottom: 24px;
+    max-width: 80%;
 }
 
-.partner-influur-logo {
+.partner-logo-img {
+    max-width: 100%;
+    display: block;
+}
+
+.partner-unicoin-logo {
     height: 24px;
     width: auto;
 }
 
+.partner-influur-logo {
+    height: 14px;
+    width: auto;
+}
+
 .partner-tube-logo {
-    height: 42px;
+    height: 32px;
     width: auto;
 }
 
@@ -395,22 +429,28 @@ button, input, select {
     letter-spacing: -0.5px;
 }
 
-.partner-description {
-    font-size: 14px;
-    color: var(--color-text-muted-dark);
-    line-height: 1.6;
-}
-
-.partner-divider {
+.partner-card-body {
+    padding: 24px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: left;
 }
 
-.divider-heart {
-    width: 32px;
-    height: 32px;
-    filter: drop-shadow(0 0 6px var(--color-gold-glow));
+.partner-card-title {
+    font-family: var(--font-title);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.partner-description {
+    font-size: 13.5px;
+    color: var(--color-text-muted-dark);
+    line-height: 1.55;
+    margin: 0;
 }
 
 /* Section Typography Utilities */
