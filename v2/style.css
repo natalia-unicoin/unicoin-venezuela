@@ -875,6 +875,14 @@ button, input, select {
     padding: 40px;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    transition: var(--transition-smooth);
+}
+
+.resources-contacts-box:hover,
+.people-finder-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04);
 }
 
 .resources-contacts-box h3 {
@@ -882,7 +890,7 @@ button, input, select {
     font-size: 20px;
     font-weight: 700;
     color: var(--color-text-dark);
-    margin-bottom: 24px;
+    margin-bottom: 28px;
 }
 
 .contacts-list {
@@ -891,15 +899,17 @@ button, input, select {
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 24px;
 }
 
 .contacts-list li {
     display: flex;
     flex-direction: column;
-    gap: 4px;
-    border-bottom: 1px solid var(--color-border-dark);
-    padding-bottom: 16px;
+    gap: 6px;
+    border-left: 3px solid var(--color-gold);
+    padding-left: 16px;
+    border-bottom: none;
+    padding-bottom: 0;
 }
 
 .contacts-list li:last-child {
@@ -910,13 +920,14 @@ button, input, select {
 .contact-name {
     font-family: var(--font-title);
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     color: var(--color-text-dark);
+    line-height: 1.2;
 }
 
 .contact-phone {
     font-family: var(--font-title);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     color: var(--color-gold);
 }
@@ -940,6 +951,8 @@ button, input, select {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    transition: var(--transition-smooth);
 }
 
 .finder-header {
@@ -990,6 +1003,28 @@ button, input, select {
 
 .finder-btn {
     width: 100%;
+    background-color: #111622 !important;
+    color: #ffffff !important;
+    border: 1px solid #111622 !important;
+    padding: 14px 24px;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    border-radius: 9999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(17, 22, 34, 0.08);
+}
+
+.finder-btn:hover {
+    background-color: #1c2333 !important;
+    border-color: #1c2333 !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(17, 22, 34, 0.15);
 }
 
 /* Creator Callout Section */
