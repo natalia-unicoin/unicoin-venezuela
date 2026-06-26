@@ -499,6 +499,16 @@ button, input, select {
     flex-grow: 1;
 }
 
+.help-card-disclaimer {
+    font-size: 11px !important;
+    color: var(--color-text-muted-dark);
+    margin-top: -12px;
+    margin-bottom: 20px;
+    font-style: italic;
+    line-height: 1.4;
+    flex-grow: 0 !important;
+}
+
 .help-card .btn {
     width: 100%;
 }
