@@ -110,14 +110,15 @@ button, input, select {
 }
 
 .btn-primary {
-    background-color: var(--color-gold);
-    color: #ffffff;
+    background-color: #fcd144;
+    color: #000000;
 }
 
 .btn-primary:hover {
-    background-color: var(--color-gold-hover);
+    background-color: #e5bd3b;
+    color: #000000;
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(197, 160, 67, 0.2);
+    box-shadow: 0 10px 25px rgba(252, 209, 68, 0.2);
 }
 
 .btn-primary:active {
@@ -140,7 +141,7 @@ button, input, select {
     align-items: center;
     padding: 24px 4vw 16px;
     z-index: 100;
-    background-color: #07090e;
+    background-color: transparent;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
