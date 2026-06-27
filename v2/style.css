@@ -2066,6 +2066,7 @@ button, input, select {
     
     /* Hero */
     .hero-section {
+        background-image: url("../child_flag_mobile.jpg");
         background-position: center top;
         align-items: flex-end;
         padding-bottom: 60px;
@@ -2202,8 +2203,7 @@ button, input, select {
     }
     
     .nav-actions .btn {
-        padding: 8px 12px !important;
-        font-size: 11px !important;
+        display: none !important;
     }
 
     .pillars-grid {
