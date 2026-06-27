@@ -2066,8 +2066,8 @@ button, input, select {
     
     /* Hero */
     .hero-section {
-        background-image: url("../child_flag_mobile.jpg");
-        background-position: center top;
+        background-image: url("../child_flag_mobile.jpg") !important;
+        background-position: center top !important;
         align-items: flex-end;
         padding-bottom: 60px;
     }
@@ -2114,20 +2114,24 @@ button, input, select {
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
         gap: 16px;
-        padding-bottom: 20px;
+        padding-bottom: 24px; /* More space for scrollbar */
         justify-content: flex-start;
+        /* Hides default scrollbar for a cleaner look if custom fails, but we want custom */
     }
     
     .partners-grid::-webkit-scrollbar {
-        height: 6px;
+        height: 8px;
+        display: block;
+        -webkit-appearance: none;
     }
     .partners-grid::-webkit-scrollbar-thumb {
         background-color: var(--color-gold);
         border-radius: 4px;
     }
     .partners-grid::-webkit-scrollbar-track {
-        background-color: rgba(255,255,255,0.05);
+        background-color: rgba(0, 0, 0, 0.05); /* slightly visible track */
         border-radius: 4px;
+        margin: 0 10px;
     }
     
     .partner-card {
