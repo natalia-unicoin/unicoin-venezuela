@@ -551,21 +551,12 @@ button, input, select {
 }
 
 .reward-secure-badge {
-    display: inline-flex;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 8px;
+    display: block;
+    text-align: center;
     font-size: 13.5px;
     color: var(--color-text-muted-dark);
-    text-align: left;
     max-width: 320px;
     margin: 0 auto;
-}
-
-.reward-secure-badge svg {
-    color: var(--color-gold);
-    flex-shrink: 0;
-    margin-top: 2px;
 }
 
 /* Section Typography Utilities */
@@ -2070,8 +2061,7 @@ button, input, select {
     }
     
     .nav-actions .btn {
-        padding: 10px 16px !important;
-        font-size: 12px !important;
+        display: none !important;
     }
     
     /* Hero */
