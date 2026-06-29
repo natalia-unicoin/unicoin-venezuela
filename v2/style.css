@@ -739,7 +739,8 @@ button, input, select {
 
 .progress-labels {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 4px;
     font-size: 14px;
     margin-bottom: 8px;
     color: #000000;
