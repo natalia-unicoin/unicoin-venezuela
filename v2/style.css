@@ -2120,7 +2120,7 @@ button, input, select {
     /* Hero */
     .hero-section {
         background-image: url("../mobile.png") !important;
-        background-position: center center !important;
+        background-position: top center !important;
         align-items: flex-end;
         padding-bottom: 60px;
     }
