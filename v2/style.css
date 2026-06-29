@@ -1723,6 +1723,58 @@ button, input, select {
 
 /* Form Styles */
 .donation-form {
+
+/* Donor Info Form */
+.donor-info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+    padding-top: 20px;
+    border-top: 1px solid var(--color-border-dark);
+}
+
+.form-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form-group label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--color-text-light);
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--color-border-dark);
+    border-radius: var(--radius-sm);
+    background-color: #f9f9fa;
+    font-size: 14px;
+    color: var(--color-text-light);
+    font-family: inherit;
+    transition: var(--transition-smooth);
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--color-gold);
+    background-color: #ffffff;
+    box-shadow: 0 0 0 2px rgba(220, 168, 62, 0.1);
+}
+
+.form-control::placeholder {
+    color: var(--color-text-muted-light);
+}
+
     display: flex;
     flex-direction: column;
     gap: 20px;

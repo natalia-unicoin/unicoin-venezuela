@@ -609,24 +609,32 @@
                     <label class="form-label">Datos de Contacto</label>
                     <div class="form-row">
                         <div class="form-col">
-                            <input type="text" id="fullName" class="form-input" placeholder="Nombre completo (Full Name)" required>
+                            <input type="text" id="donorName" class="form-input" placeholder="Nombre" required>
                         </div>
                         <div class="form-col">
-                            <input type="email" id="emailAddress" class="form-input" placeholder="Correo electrónico (Email Address)" required>
+                            <input type="text" id="donorLastName" class="form-input" placeholder="Apellido" required>
                         </div>
                     </div>
                     <div class="form-row" style="margin-top: 12px;">
                         <div class="form-col">
-                            <input type="text" id="country" class="form-input" placeholder="País (Country)" required>
+                            <input type="email" id="donorEmail" class="form-input" placeholder="Email" required>
                         </div>
                         <div class="form-col">
-                            <input type="tel" id="phoneNumber" class="form-input" placeholder="Teléfono (Phone Number)" required>
+                            <input type="text" id="donorCountry" class="form-input" placeholder="País" required>
+                        </div>
+                    </div>
+                    <div class="form-row" style="margin-top: 12px;">
+                        <div class="form-col">
+                            <input type="text" id="donorCompany" class="form-input" placeholder="Empresa" required>
+                        </div>
+                        <div class="form-col">
+                            <input type="url" id="donorLinkedIn" class="form-input" placeholder="Enlace de LinkedIn" required>
                         </div>
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-primary w-full btn-large" style="margin-top: 20px;">Proceder al Pago con PayPal</button>
-                <p class="modal-disclaimer">Al continuar, serás redirigido a PayPal para completar tu donación de forma segura. Amin H. y Unicoin Foundation duplicarán el monto&nbsp;registrado.</p>
+                <button type="submit" class="btn btn-primary w-full btn-large" style="margin-top: 20px;">Continuar a GoFundMe</button>
+                <p class="modal-disclaimer">Al continuar, serás redirigido a la campaña oficial en GoFundMe para procesar tu donativo. Luego, Unicoin Foundation duplicará el impacto en unicoins.</p>
             </form>
         </div>
     </div>

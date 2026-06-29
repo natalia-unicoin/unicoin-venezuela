@@ -128,16 +128,18 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Get donation details (can be used for tracking if needed)
         const amount = customAmountInput.value;
-        const name = document.getElementById('fullName').value;
-        const email = document.getElementById('emailAddress').value;
-        const country = document.getElementById('country').value;
-        const phone = document.getElementById('phoneNumber').value;
+        const name = document.getElementById('donorName').value;
+        const lastName = document.getElementById('donorLastName').value;
+        const email = document.getElementById('donorEmail').value;
+        const country = document.getElementById('donorCountry').value;
+        const company = document.getElementById('donorCompany').value;
+        const linkedin = document.getElementById('donorLinkedIn').value;
         
-        console.log(`Donation registered: ${amount} USD by ${name} (${email}) from ${country}, Tel: ${phone}`);
+        console.log(`Donation registered: ${amount} USD by ${name} ${lastName} (${email}) from ${country}, Company: ${company}, LinkedIn: ${linkedin}`);
         
-        // Open PayPal donation link in a new tab (placeholder URL, can be updated to specific PayPal link later)
-        const paypalUrl = 'https://www.paypal.com/donate';
-        window.open(paypalUrl, '_blank');
+        // Open GoFundMe donation link in a new tab
+        const gofundmeUrl = 'https://www.gofundme.com/f/emergency-relief-for-venezuela-earthquake-victims?lang=en_US';
+        window.open(gofundmeUrl, '_blank');
         
         closeModal();
         
