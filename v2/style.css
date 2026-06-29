@@ -2067,7 +2067,7 @@ button, input, select {
     /* Hero */
     .hero-section {
         background-image: url("../child_flag_mobile_v2.png") !important;
-        background-position: center top !important;
+        background-position: center center !important;
         align-items: flex-end;
         padding-bottom: 60px;
     }
