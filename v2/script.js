@@ -8,14 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const successOverlay = document.getElementById('successOverlay');
     const closeSuccessBtn = document.getElementById('closeSuccessBtn');
     
-    const presetBtns = document.querySelectorAll('.preset-btn');
-    const customAmountInput = document.getElementById('customAmountInput');
     
-    const userDonationVal = document.getElementById('userDonationVal');
-    const unicoinMatchVal = document.getElementById('unicoinMatchVal');
-    const totalImpactVal = document.getElementById('totalImpactVal');
-    
-    
+
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const mobileNav = document.querySelector('.mobile-nav');
 
@@ -72,62 +66,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- Live Match Calculation ---
-    const calculateMatch = (amount) => {
-        const parsedAmount = parseFloat(amount);
-        if (isNaN(parsedAmount) || parsedAmount <= 0) {
-            userDonationVal.textContent = '$0.00 USD';
-            unicoinMatchVal.textContent = '+ 0.00 UNIC';
-            totalImpactVal.textContent = '$0.00 USD';
-            return;
-        }
-
-        // 1 USD = 1 UNIC matched (dollar-for-dollar)
-        const matchUnicoin = parsedAmount.toFixed(2);
-        // Total impact is doubled because of the match
-        const totalImpact = (parsedAmount * 2).toFixed(2);
-
-        userDonationVal.textContent = `$${parsedAmount.toFixed(2)} USD`;
-        unicoinMatchVal.textContent = `+ ${matchUnicoin} UNIC`;
-        totalImpactVal.textContent = `$${totalImpact} USD`;
-    };
-
-    // --- Amount Presets Selection ---
-    presetBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            presetBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            
-            const amount = btn.getAttribute('data-amount');
-            customAmountInput.value = amount;
-            calculateMatch(amount);
-        });
-    });
-
-    // --- Custom Amount Input ---
-    customAmountInput.addEventListener('input', (e) => {
-        const value = e.target.value;
-        
-        // Remove active class from presets if value doesn't match
-        let matchedPreset = false;
-        presetBtns.forEach(btn => {
-            if (btn.getAttribute('data-amount') === value) {
-                btn.classList.add('active');
-                matchedPreset = true;
-            } else {
-                btn.classList.remove('active');
-            }
-        });
-        
-        calculateMatch(value);
-    });
-
     // --- Form Submission & Success Feedback ---
     donationForm.addEventListener('submit', (e) => {
         e.preventDefault();
         
         // Get donation details (can be used for tracking if needed)
-        const amount = customAmountInput.value;
+        
         const name = document.getElementById('donorName').value;
         const lastName = document.getElementById('donorLastName').value;
         const email = document.getElementById('donorEmail').value;
@@ -135,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const company = document.getElementById('donorCompany').value;
         const linkedin = document.getElementById('donorLinkedIn').value;
         
-        console.log(`Donation registered: ${amount} USD by ${name} ${lastName} (${email}) from ${country}, Company: ${company}, LinkedIn: ${linkedin}`);
+        console.log(`Donation registered: by ${name} ${lastName} (${email}) from ${country}, Company: ${company}, LinkedIn: ${linkedin}`);
         
         // Open GoFundMe donation link in a new tab
         const gofundmeUrl = 'https://www.gofundme.com/f/emergency-relief-for-venezuela-earthquake-victims?lang=en_US';
@@ -155,12 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Reset form
         donationForm.reset();
-        
-        // Set back default values
-        presetBtns.forEach(b => b.classList.remove('active'));
-        presetBtns[1].classList.add('active'); // $50 default active
-        customAmountInput.value = "50";
-        calculateMatch(50);
     };
 
     closeSuccessBtn.addEventListener('click', closeSuccess);
@@ -228,6 +166,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Initialize calculation
-    calculateMatch(50);
+
 });
