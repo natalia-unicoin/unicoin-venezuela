@@ -81,9 +81,11 @@ document.addEventListener('DOMContentLoaded', () => {
         
         console.log(`Donation registered: by ${name} ${lastName} (${email}) from ${country}, Company: ${company}, LinkedIn: ${linkedin}`);
         
-        // Open GoFundMe donation link in a new tab
-        const gofundmeUrl = 'https://www.gofundme.com/f/emergency-relief-for-venezuela-earthquake-victims?lang=en_US';
-        window.open(gofundmeUrl, '_blank');
+        // Open donation link in a new tab (DEV: Insert the link here)
+        const donationUrl = '';
+        if (donationUrl) {
+            window.open(donationUrl, '_blank');
+        }
         
         closeModal();
         
