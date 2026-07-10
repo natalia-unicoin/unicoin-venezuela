@@ -659,6 +659,76 @@ button, input, select {
     width: 100%;
 }
 
+/* --- PHILOSOPHY SECTION --- */
+.philosophy-section {
+    padding: var(--space-lg) 0;
+    background-color: var(--color-brand-white);
+}
+
+.philosophy-card {
+    background-color: #f9f9f9;
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--radius-md);
+    padding: 60px 40px;
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.philosophy-title {
+    font-family: var(--font-title);
+    font-size: clamp(28px, 4vw, 36px);
+    font-weight: 800;
+    color: var(--color-text-dark);
+    margin-bottom: 24px;
+    line-height: 1.25;
+}
+
+.philosophy-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.philosophy-lead {
+    font-size: 19px;
+    color: var(--color-text-dark);
+    font-weight: 600;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.philosophy-text {
+    font-size: 16px;
+    color: var(--color-text-muted-dark);
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.philosophy-highlight-box {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: var(--color-brand-white);
+    border: 1px solid var(--color-border-light);
+    border-left: 4px solid var(--color-gold-primary);
+    border-radius: var(--radius-md);
+    text-align: left;
+}
+
+.philosophy-highlight-box strong {
+    font-family: var(--font-title);
+    font-size: 20px;
+    color: var(--color-text-dark);
+    display: block;
+    margin-bottom: 12px;
+}
+
+.philosophy-text-small {
+    font-size: 15px;
+    color: var(--color-text-muted-dark);
+    line-height: 1.6;
+    margin: 0;
+}
+
 /* --- MATCH / AMIN H. SECTION --- */
 .match-section {
     padding: 100px 0;
