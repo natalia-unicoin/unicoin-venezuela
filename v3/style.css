@@ -229,9 +229,9 @@ button, input, select {
     position: relative;
     min-height: 90vh;
     background-color: #07090e;
-    background-image: url('../child_flag.jpg');
+    background-image: url('herov2.png');
     background-size: cover;
-    background-position: right center;
+    background-position: center center;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
